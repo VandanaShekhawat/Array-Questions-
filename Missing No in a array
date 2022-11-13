@@ -1,0 +1,13 @@
+public class MyClass {
+    public static void main(String args[]) {
+     int no [] = {2,3,4,5,6,7,8,9};
+     int newno = no.length+1;
+     int sum = newno*(newno+1)/2;
+     System.out.println(sum);
+     int s = 0;
+     for(int i = 0;i<=no.length-1;i++){
+         s = s+no[i];
+     }
+     System.out.println(sum-s);
+    }
+}
