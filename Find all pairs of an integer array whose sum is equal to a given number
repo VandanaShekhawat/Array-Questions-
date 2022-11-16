@@ -1,0 +1,15 @@
+public class MyClass {
+    public static void main(String args[]) {
+        // To find all pairs of an integer array whose sum is equal to a given number
+    int arr [] = {8,1,2,4,3,5,-1,4,6,-7,8};
+    int len = arr.length;
+    int sum = 7;
+    for(int i = 0;i<len;i++){
+    for(int j = i+1;j<len;j++){
+        if(arr[i]+arr[j]==sum){
+            System.out.println(arr[i]+" and " + arr[j] + " are the pairs of the sum = " + sum);
+                }
+            }
+        }
+    }
+}
