@@ -1,0 +1,25 @@
+public class MyClass {
+    public static void main(String args[]) {
+        // To find the largest and smallest number in an unsorted interger array
+    int arr [] = {8,12,2,4,3,4,6,-7,8};
+   int len = arr.length;
+ int largest = arr[0];
+ int smallest = arr[0];
+   for(int i = 1;i<len-1;i++){
+       if(arr[i]>largest){
+           largest = arr[i];
+       }
+       else if(arr[i]<smallest){
+           smallest = arr[i];
+       }
+   }
+       System.out.println(largest + " is the largest element in an array");
+       System.out.println(smallest + " is the smallest element in an array");
+  
+    
+   System.out.println("=====================================");
+   for(int i = 0;i<= arr.length-1;i++){
+       System.out.print(arr[i]+" ");
+        }
+    }
+}
