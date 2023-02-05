@@ -1,0 +1,14 @@
+public class sumOfArrayRecursion {
+    public static void main(String[] args) {
+        int [] arr = { 2,3,4,7,9,7,5};
+        int res = sum ( arr, arr.length);
+        System.out.println("Sum is : " + res);
+    }
+
+public static int sum(int arr [], int no) {
+    if(no <= 0){
+        return 0;
+    }
+   return sum(arr, no-1)+ arr[no-1]; 
+}
+}
